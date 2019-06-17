@@ -554,6 +554,17 @@ public abstract class FlowModBuilder {
                 log.warn("Match type {} not yet implemented.", c.type());
             }
         }
+
+        // test for oxm
+//        log.info("##### test for oxm #####");
+//        mBuilder.setExact(MatchField.HOP, U8.of((short) 11));
+//        mBuilder.setExact(MatchField.TOWARD, U8.of((short) 123));
+//        mBuilder.setExact(MatchField.FIXPORT, U8.of((short) 111));
+//        mBuilder.setExact(MatchField.FORBID, U64.of(333));
+//        mBuilder.setExact(MatchField.BANDWIDTH, U8.of((short)222));
+//        mBuilder.setExact(MatchField.PRED, U8.of((short)1));
+//        mBuilder.setExact(MatchField.LEVEL, U8.of((short)2));
+
         return mBuilder.build();
     }
 
